@@ -10,10 +10,15 @@ export const MainLayout = () => {
     <>
       <Helmet>
         <html className="m-0 p-0" />
-        <body className="min-h-full  box-border  antialiased text-white  radial-gradient" />
+        <body className="min-h-full  box-border   bg-[#f8f9eb] " />
       </Helmet>
       <Navbar />
       <Outlet />
     </>
   );
 };
+
+// beyazımsı f8f9eb
+// yeşil 43766C
+// açık kahverengi B19470
+// koyu kahverengi 76453B
