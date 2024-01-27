@@ -2,7 +2,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 export const Two = () => {
  return (
-  <section>
+  <section id="two">
    <div className="relative flex w-full   h-[100%]  items-end bg-gri">
     asf
     {/* <Player className=" w-[100vw scale-y-[-1]" autoplay loop src={bg} /> */}

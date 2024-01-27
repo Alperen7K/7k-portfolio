@@ -4,6 +4,7 @@ html {
 }
 * {
  scrollbar-width: none;
+ font-family: "Courier Prime", monospace;
 }
 
 section {

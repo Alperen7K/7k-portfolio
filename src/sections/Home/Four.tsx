@@ -1,6 +1,6 @@
 export const Four = () => {
  return (
-  <section>
+  <section id="four">
    <div className="relative flex w-full   h-[100%]  items-end bg-açıkGri">
     asf
     {/* <Player className=" w-[100vw scale-y-[-1]" autoplay loop src={bg} /> */}

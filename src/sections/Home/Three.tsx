@@ -3,7 +3,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 export const Three = () => {
   return (
-   <section>
+   <section id="three">
     <div className="relative flex w-full  items-start h-full bg-açıkGri">
      <div className="h-[20%]  w-full bg-gri" />
 
