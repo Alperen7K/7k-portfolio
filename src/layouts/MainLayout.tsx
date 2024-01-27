@@ -7,13 +7,13 @@ import { Navbar } from "./Navbar";
 
 export const MainLayout = () => {
   return (
-    <>
-      <Helmet>
-        <html className="m-0 p-0" />
-        <body className="min-h-full  box-border select-none  bg-[#f8f9eb] " />
-      </Helmet>
-      <Navbar />
-      <Outlet />
-    </>
+   <>
+    <Helmet>
+     <html className="m-0 p-0" />
+     <body className="min-h-full overflow-x-hidden box-border select-none  bg-[#f8f9eb] " />
+    </Helmet>
+    <Navbar />
+    <Outlet />
+   </>
   );
 };
