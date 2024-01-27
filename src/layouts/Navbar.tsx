@@ -1,6 +1,5 @@
-import { Player } from "@lottiefiles/react-lottie-player";
 import menu from "../assets/menu.svg";
-import { ConfigProvider, Drawer, Popover } from "antd";
+import { ConfigProvider, Drawer } from "antd";
 import { useState } from "react";
 import instagram from "../assets/instagram.svg";
 import linkedin from "../assets/linkedin.svg";
@@ -8,7 +7,6 @@ import github from "../assets/github.svg";
 import phone from "../assets/phone.svg";
 import mail from "../assets/mail.svg";
 import close from "../assets/close.svg";
-import { CloseOutlined } from "@ant-design/icons";
 
 export const Navbar = () => {
  const [open, setOpen] = useState(false);
