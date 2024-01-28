@@ -24,6 +24,9 @@ export const Three = () => {
    onMouseEnter={() => {
     setIsShow("skills");
    }}
+   onScroll={() => {
+    setIsShow("skills");
+   }}
    id="skills"
    className="relative items-start  w-full bg-açıkGri"
   >
@@ -33,18 +36,22 @@ export const Three = () => {
      Skills
     </h1>
     <div className="my-2 flex flex-col gap-y-2 overflow-y-auto sm:mt-10">
-     {isShow === "skills"
-      ? skills.map((skill: any, index: number) => {
-         return (
-          <LoadingBar
-           key={index}
-           name={skill.name}
-           rate={skill.rate}
-           wait={skill.wait}
-          />
-         );
-        })
-      : ""}
+     {isShow === "skills" ? (
+      skills.map((skill: any, index: number) => {
+       return (
+        <LoadingBar
+         key={index}
+         name={skill.name}
+         rate={skill.rate}
+         wait={skill.wait}
+        />
+       );
+      })
+     ) : (
+      <div className="w-full h-full flex items-center justify-center animate-pulse md:hidden">
+       <span>Touch the screen</span>
+      </div>
+     )}
     </div>
    </div>
   </section>
