@@ -16,12 +16,12 @@ export const Two = () => {
    id="about"
    className=" w-full   h-[100vh]   bg-gri"
   >
-   <div className="w-full h-full flex pt-[70px] px-6 flex-col justify-evenly items-start md:items-center">
+   <div className="w-full h-full flex pt-[90px] sm:pt-[70px] px-6 flex-col justify-around sm:justify-start sm:mt-20 md:mt-0 md:justify-evenly items-start md:items-center">
     <div className="w-full">
-     <h1 className="w-full text-[30px] mt-0 pt-0 text-center lg:text-[35px] xl:text-[40px]">
+     <h1 className="w-full text-[30px] mt-0 pt-0 text-center sm:hidden">
       About
      </h1>
-     <p className="text-justify pt-1 text-[15px] md:hidden">
+     <p className="text-justify pt-1 text-[15px] sm:hidden">
       I was born in Konya, and I decided to stay in my hometown for my
       university education. My hunger for learning constantly motivates me to
       improve.
@@ -60,13 +60,13 @@ export const Two = () => {
       </div>
      </div>
     </div>
-    <div className="mb-8 w-[90vw] flex flex-col gap-y-5 justify-evenly items-start ">
-     <p className="text-justify pt-1 text-[15px] md:text-[18px] md:block hidden ">
+    <div className="mb-8 w-[90vw] sm:mt-10 md:mt-0 flex flex-col gap-y-5 justify-evenly items-start ">
+     <p className="text-justify pt-1 text-[15px] md:text-[18px] sm:block hidden ">
       I was born in Konya, and I decided to stay in my hometown for my
       university education. My hunger for learning constantly motivates me to
       improve.
      </p>
-     <p className="text-justify pt-1 text-[14px] md:text-[18px] overflow-y-auto ">
+     <p className="sm:mt-10 md:mt-0 text-justify pt-1 text-[14px] md:text-[18px] overflow-y-auto ">
       I began my journey of learning software through voluntary work at the
       Kapsül Technology Platform. With diligence over time, I secured my first
       job in my software career. Currently, I am actively engaged in my current

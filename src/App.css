@@ -16,13 +16,13 @@ section {
 }
 
 .navbar-font {
- font-family: "Courier Prime", monospace;
+ /* font-family: "Courier Prime", monospace; */
 }
 
 @font-face {
  font-family: "Courier Prime";
  src: local("YourFontName"),
-  url("/src/assets/Fonts/Baloo_Thambi_2/BalooThambi2-VariableFont_wght.ttf")
+  url("/src/assets/Fonts/Courier_Prime/CourierPrime-Bold.ttf")
    format("truetype");
  font-weight: bold;
  font-style: normal;
