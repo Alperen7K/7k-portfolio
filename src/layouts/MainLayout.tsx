@@ -10,7 +10,7 @@ export const MainLayout = () => {
    <>
     <Helmet>
      <html className="m-0 p-0" />
-     <body className="min-h-full overflow-x-hidden   box-border select-none  bg-açıkGri " />
+     <body className="min-h-full overflow-x-hidden text-white  box-border select-none  bg-açıkGri " />
     </Helmet>
     <Navbar />
     <Outlet />

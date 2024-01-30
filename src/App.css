@@ -22,8 +22,21 @@ section {
 @font-face {
  font-family: "Courier Prime";
  src: local("YourFontName"),
-  url("/src/assets/Fonts/Courier_Prime/CourierPrime-Bold.ttf")
+  url("/src/assets/Fonts/Montserrat,Playfair_Display/Montserrat/Montserrat-VariableFont_wght.ttf")
    format("truetype");
  font-weight: bold;
  font-style: normal;
+}
+@font-face {
+ font-family: "Courier Prime Normal";
+ src: local("YourFontName"),
+  url("/src/assets/Fonts/Montserrat,Playfair_Display/Montserrat/Montserrat-VariableFont_wght.ttf")
+   format("truetype");
+ font-weight: normal;
+ font-style: normal;
+}
+
+.normal-font{
+ font-family: "Courier Prime Normal", monospace;
+
 }

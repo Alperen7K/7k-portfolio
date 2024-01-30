@@ -1,4 +1,4 @@
-import { Four, One, Three, Two } from "../sections/Home";
+import { Five, Four, One, Three, Two } from "../sections/Home";
 
 export const Home = () => {
  return (
@@ -7,6 +7,7 @@ export const Home = () => {
    <Two />
    <Three />
    <Four />
+   <Five />
   </div>
  );
 };

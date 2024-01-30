@@ -95,18 +95,18 @@ export const Navbar = () => {
         Skills
        </a>
        <a
-        href="#resume"
-        onClick={() => setOpen(false)}
-        className={draverLabelClass}
-       >
-        Resume
-       </a>
-       <a
         href="#portfolio"
         onClick={() => setOpen(false)}
         className={draverLabelClass}
        >
         Portfolio
+       </a>
+       <a
+        href="#resume"
+        onClick={() => setOpen(false)}
+        className={draverLabelClass}
+       >
+        Resume
        </a>
       </div>
      </div>
@@ -139,14 +139,6 @@ export const Navbar = () => {
        Skills
       </a>
       <a
-       href="#resume"
-       className={
-        labelClass + `${isShow === "resume" ? "border-b-[4px]" : "border-b-0"}`
-       }
-      >
-       Resume
-      </a>
-      <a
        href="#portfolio"
        className={
         labelClass +
@@ -154,6 +146,14 @@ export const Navbar = () => {
        }
       >
        Portfolio
+      </a>
+      <a
+       href="#resume"
+       className={
+        labelClass + `${isShow === "resume" ? "border-b-[4px]" : "border-b-0"}`
+       }
+      >
+       Resume
       </a>
      </div>
      <img
