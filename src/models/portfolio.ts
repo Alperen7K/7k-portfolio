@@ -23,6 +23,7 @@ export const data: any = [
   path: "binance-bot",
   name: "Binance Bot",
   duty: "Freelance",
+  techs: ["react", "typescript", "flawCharts", "antd", "tailwind", "axios"],
   detail:
    "It is a system where the user can add and change the functions they want and also manage opening and closing bots with these functions.",
   photos: [binance2, binance1, binance3],
@@ -31,6 +32,7 @@ export const data: any = [
   path: "press",
   name: "Kapsül Basında Biz",
   duty: "Kapsül Teknoloji Platformu",
+  techs: ["react", "typescript", "antd", "tailwind", "axios"],
   detail:
    "An interface used to display the news published in the press for the Capsule Technology Platform by adding news, editing the news and displaying the news that is on the air.",
   photos: [press2, press1, press3, press4, press5],

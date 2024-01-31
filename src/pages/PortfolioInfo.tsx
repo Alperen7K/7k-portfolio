@@ -9,7 +9,7 @@ export const PortfolioInfo = () => {
  console.log(product);
  return (
   <div className="w-[100vw] overflow-x-hidden flex flex-col items-center">
-   <h1 className="w-full text-center text-[30px] xl:text-[40px] my-5 mt-10">
+   <h1 className="w-full font-bold text-center text-[30px] xl:text-[40px] my-5 mt-10">
     {product.name}
    </h1>
    <div className="w-full ">
@@ -39,8 +39,17 @@ export const PortfolioInfo = () => {
      </Carousel>
     </ConfigProvider>
    </div>
-   <div className="w-full p-5">
-    <h1>{product.detail}</h1>
+   <div className="w-full p-5 py-10 flex flex-col items-center">
+    <h1 className="max-w-[700px]">{product.detail}</h1>
+    <div className="py-5">
+     <h1 className="text-center text-[24px] font-bold mb-2">
+      Used Technologies
+     </h1>
+     {/* {product.techs.map((tech: string) => {
+      return <span className=" p-1 "> - {tech} -</span>;
+     })} */}
+     {product.techs.join(" / ")}
+    </div>
    </div>
   </div>
  );

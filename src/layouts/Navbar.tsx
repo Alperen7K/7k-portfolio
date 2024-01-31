@@ -27,7 +27,7 @@ export const Navbar = () => {
  };
 
  return (
-  <div className="sticky top-0 z-40 py-1 right-0 left-0 navbar-font text-white">
+  <div className="sticky top-0 z-40 py-1 right-0 left-0 navbar-font backdrop-blur-sm text-white border-b-2 border-solid border-white/70 ">
    {/* Side Bar */}
    <ConfigProvider
     theme={{
