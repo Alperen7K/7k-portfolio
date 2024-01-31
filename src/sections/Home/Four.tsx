@@ -11,7 +11,7 @@ export const Four = () => {
   <section
    onMouseEnter={() => setIsShow("portfolio")}
    id="portfolio"
-   className=" w-full pt-12 flex flex-col     bg-açıkGri"
+   className=" w-full  flex flex-col items-center     bg-açıkGri"
   >
    <div className="w-full flex items-center justify-end  px-5">
     <button
@@ -22,7 +22,7 @@ export const Four = () => {
     </button>
    </div>
    <Marquee pauseOnHover className="">
-    <div className="flex gap-10 mx-5 pb-20">
+    <div className="flex   gap-10  my-14 mx-5">
      {data.map((product: any, index: number) => {
       console.log(product);
 

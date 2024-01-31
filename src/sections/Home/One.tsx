@@ -15,13 +15,11 @@ export const One = () => {
        className=" w-[40vh] lg:w-[30vw]  h-[40vh] lg:h-[30vw] bg-center mt-20 bg-no-repeat bg-cover rounded-full border-[15px] border-solid border-gri lg:border-gri"
        style={{ backgroundImage: `url(${alpi})` }}
       />
-      <div className="lg:px-8 lg:py-4 lg:bg-gri rounded-full ">
+      <div className="lg:px-8 lg:py-4 lg:bg-gri rounded-full lg:border-2 border-solid border-white">
        <h1 className="text-center mt-16 lg:mt-0  text-[28px] font-bold">
         Mehmet Alperen YEDİK
        </h1>
-       <h1 className=" text-center text-[25px] font-bold">
-        Frontend Developer
-       </h1>
+       <h1 className=" text-center text-[25px] ">Frontend Developer</h1>
       </div>
      </div>
     </div>

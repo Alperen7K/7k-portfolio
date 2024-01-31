@@ -48,7 +48,7 @@ export const Three = () => {
        );
       })
      ) : (
-      <div className="w-full h-[70vh] flex items-center justify-center animate-pulse md:hidden">
+      <div className="w-full h-[70vh] flex items-center justify-center animate-pulse ">
        <span className="text-[20px]">Touch the screen</span>
       </div>
      )}

@@ -13,7 +13,9 @@ export const MainLayout = () => {
      <body className="min-h-full overflow-x-hidden text-white  box-border select-none  bg-açıkGri " />
     </Helmet>
     <Navbar />
-    <Outlet />
+    <div className="w-full h-[100vh-100px]">
+     <Outlet />
+    </div>
    </>
   );
 };

@@ -8,11 +8,13 @@ import phone from "../assets/phone.svg";
 import mail from "../assets/mail.svg";
 import close from "../assets/close.svg";
 import { useStore } from "../zustandStore";
+import { useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
  const { isShow } = useStore();
+ const navigate = useNavigate();
  const [open, setOpen] = useState(false);
- let labelClass = `m-2   px-2 text-[18px] md:text-[24px] rounded-b-lg hover:border-b-[4px] text-white border-solid hover:border-white box-border duration-200  `;
+ let labelClass = `m-2   px-2 text-[16px] md:text-[22px] rounded-b-lg hover:border-b-[3px] text-white border-solid hover:border-white box-border duration-200  `;
  let draverLabelClass = "mx-2  text-[22px] text-white font-bold ";
  const iconClass =
   "w-10 shadow rounded-lg  hover:bg-antrasit duration-300 hover:scale-[1.04] ";
@@ -25,7 +27,7 @@ export const Navbar = () => {
  };
 
  return (
-  <div className="sticky top-0 z-40 right-0 left-0 navbar-font text-white">
+  <div className="sticky top-0 z-40 py-1 right-0 left-0 navbar-font text-white">
    {/* Side Bar */}
    <ConfigProvider
     theme={{
@@ -39,7 +41,7 @@ export const Navbar = () => {
      // title="Basic Drawer"
      onClose={() => setOpen(false)}
      open={open}
-     closeIcon={<img src={close} className="p-1 w-12" />}
+     closeIcon={<img src={close} alt="close" className="p-1 w-12" />}
      width={250}
      footer={
       <div>
@@ -81,33 +83,43 @@ export const Navbar = () => {
      <div className="w-full  text-black flex flex-col items-start">
       <div className="flex flex-col justify-between gap-6 items-start">
        <a
-        href="#about"
-        onClick={() => setOpen(false)}
+        // href="#about"
+
+        onClick={() => {
+         setOpen(false);
+         navigate("/about");
+        }}
         className={draverLabelClass}
        >
         About
        </a>
        <a
-        href="#skills"
-        onClick={() => setOpen(false)}
+        // href="#skills"
+        onClick={() => {
+         setOpen(false);
+         navigate("/skills");
+        }}
         className={draverLabelClass}
        >
         Skills
        </a>
        <a
-        href="#portfolio"
-        onClick={() => setOpen(false)}
+        // href="#portfolio"
+        onClick={() => {
+         setOpen(false);
+         navigate("/portfolio");
+        }}
         className={draverLabelClass}
        >
         Portfolio
        </a>
-       <a
+       {/* <a
         href="#resume"
         onClick={() => setOpen(false)}
         className={draverLabelClass}
        >
         Resume
-       </a>
+       </a> */}
       </div>
      </div>
     </Drawer>
@@ -115,14 +127,18 @@ export const Navbar = () => {
    <div className="h-[100px] w-full   flex items-center justify-center">
     <div className="w-[100vw] sm:w-[95vw] lg:w-[85vw] h-full  rounded-b-full pb-4 px-10   flex items-center justify-between">
      <label
-      onClick={scrollToTop}
-      className="text-[45px] hover:scale-[1.03] duration-300"
+      onClick={() => {
+       scrollToTop();
+       navigate("/");
+      }}
+      className="text-[45px] hover:scale-[1.03] font-bold duration-300"
      >
       7K's
      </label>
      <div className="sm:block hidden">
       <a
-       href="#about"
+       //    href="#about"
+       onClick={() => navigate("/about")}
        className={
         labelClass + `${isShow === "about" ? "border-b-[4px]" : "border-b-0"}`
        }
@@ -130,7 +146,8 @@ export const Navbar = () => {
        About
       </a>
       <a
-       href="#skills"
+       //    href="#skills"
+       onClick={() => navigate("/skills")}
        className={
         labelClass +
         `${isShow === "skills" ? "border-b-[4px] " : "border-b-0 "}`
@@ -139,7 +156,8 @@ export const Navbar = () => {
        Skills
       </a>
       <a
-       href="#portfolio"
+       //    href="#portfolio"
+       onClick={() => navigate("/portfolio")}
        className={
         labelClass +
         `${isShow === "portfolio" ? "border-b-[4px] " : "border-b-0"}`
@@ -147,14 +165,14 @@ export const Navbar = () => {
       >
        Portfolio
       </a>
-      <a
+      {/* <a
        href="#resume"
        className={
         labelClass + `${isShow === "resume" ? "border-b-[4px]" : "border-b-0"}`
        }
       >
        Resume
-      </a>
+      </a> */}
      </div>
      <img
       onClick={() => {

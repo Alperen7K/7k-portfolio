@@ -1,18 +1,23 @@
 html {
- scroll-snap-type: y mandatory;
+ /* scroll-snap-type: y mandatory; */
  scrollbar-width: none;
 }
 * {
  scrollbar-width: none;
- font-family: "Courier Prime", monospace;
+ font-family: "Montserrat", monospace;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
 }
 
 section {
- height: 100vh;
+ /* height: 100vh;
  display: flex;
  justify-content: center;
  align-items: center;
- scroll-snap-align: center;
+ scroll-snap-align: center; */
 }
 
 .navbar-font {

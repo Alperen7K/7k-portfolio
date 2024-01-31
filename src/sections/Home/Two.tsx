@@ -1,14 +1,14 @@
-import alpi from "../../assets/alpy.png";
 import { useStore } from "../../zustandStore";
 import birthday from "../../assets/birthday.svg";
 import phone from "../../assets/phone.svg";
+import alpi from "../../assets/alpy.png";
 import user from "../../assets/user.svg";
 
 export const Two = () => {
  const { setIsShow } = useStore();
 
  const infoClass =
-  "w-full flex  items-end text-[18px] md:text-[20px] xl:text-[22px]  py-[2px] gap-x-2";
+  "w-full flex font-normal  items-end text-[16px] md:text-[18px] xl:text-[22px]  py-[2px] gap-x-2";
 
  return (
   <section
@@ -31,25 +31,27 @@ export const Two = () => {
      <div className="w-full flex items-center justify-center my-1 border-b-2 border-solid border-white md:hidden">
       <img src={user} className="w-10 " />
      </div>
-     <div className="sm:flex w-full items-center justify-around">
-      {/* <div className="hidden md:flex w-[50vw]  items-center justify-center"> */}
+     <div className="sm:flex w-full items-center justify-center sm:gap-x-8 lg:gap-x-20">
       <div
        className="hidden sm:block w-[25vh] h-[25vh] md:w-[40vh] md:h-[40vh] bg-center bg-no-repeat bg-cover rounded-full border-[2px] border-solid border-white"
        style={{ backgroundImage: `url(${alpi})` }}
       />
-      {/* </div> */}
       <div className="w-full sm:w-fit my-1 flex flex-col gap-2">
        <div className={infoClass}>
-        <b className="text-white ">Birthday : </b> 21/06/2002
+        <b className="text-white text-[18px] md:text-[20px]">Birthday : </b>{" "}
+        21/06/2002
        </div>
        <div className={infoClass}>
-        <b className="text-white">City : </b> Konya, Turkey
+        <b className="text-white text-[18px] md:text-[20px]">City : </b> Konya,
+        Turkey
        </div>
        <div className={infoClass}>
-        <b className="text-white">Degree : </b> Bachelor's
+        <b className="text-white text-[18px] md:text-[20px]">Degree : </b>{" "}
+        Bachelor's
        </div>
        <div className={infoClass}>
-        <b className="text-white">Phone : </b> 546 434 60 08
+        <b className="text-white text-[18px] md:text-[20px]">Phone : </b> 546
+        434 60 08
        </div>
        <div className="w-full flex  items-center text-[13px] sm:tex-[18px] md:text-[20px] xl:text-[22px]   py-[2px] gap-2">
         <b className="text-white text-[18px] md:text-[20px] xl:text-[22px]">
@@ -60,7 +62,7 @@ export const Two = () => {
       </div>
      </div>
     </div>
-    <div className="mb-8 w-[90vw] sm:mt-10 md:mt-0 flex flex-col gap-y-5 justify-evenly items-start ">
+    <div className="mb-8 w-[80vw] sm:mt-10 md:mt-0 flex flex-col gap-y-5 justify-evenly items-start ">
      <p className="text-justify pt-1 text-[15px] md:text-[18px] sm:block hidden ">
       I was born in Konya, and I decided to stay in my hometown for my
       university education. My hunger for learning constantly motivates me to
