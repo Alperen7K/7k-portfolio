@@ -7,8 +7,16 @@ import { useStore } from "../zustandStore";
 export const Portfolio = () => {
  const { setIsShow } = useStore();
 
+ const scrollToTop = () => {
+  window.scrollTo({
+   top: 0,
+   behavior: "smooth",
+  });
+ };
+
  useEffect(() => {
   setIsShow("portfolio");
+  scrollToTop();
  }, []);
  return (
   <div className="w-full flex flex-col items-center">

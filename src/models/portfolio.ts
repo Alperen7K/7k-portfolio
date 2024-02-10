@@ -44,12 +44,6 @@ import scanner2 from "../assets/scanner/shift.png";
 import scanner3 from "../assets/scanner/feedback.png";
 import scanner4 from "../assets/scanner/not-found.png";
 
-//   technology: {
-//    react: { logo: react, name: "ReactJs", link: "" },
-//    antd: { logo: antd, name: "Ant Design", link: "" },
-//    tailwind: { logo: tailwind, name: "TailwindCss", link: "" },
-//   },
-
 export const data: any = [
  //  Forms
  {
@@ -78,7 +72,6 @@ export const data: any = [
    "This project is a result of the initial steps taken in a venture initiated with my circle of friends. I delved into speech-to-text and text-to-speech libraries to develop a voice assistant on the web. At the end of this project, there is a messaging interface available. Users can activate the assistant by placing the necessary keywords at the beginning of their sentences (for example: 'Hey Ema'), and all the questions they ask will be displayed on the screen. These questions are then directed to our backend where our AI processes them and sends back responses, which are then displayed in the response box for the user.",
   photos: [aa1, aa2, aa3, aa4, aa5],
  },
-
  //  Scanner
  {
   path: "kapsul-scanner",
@@ -142,7 +135,6 @@ export const data: any = [
    "An interface used to display the news published in the press for the Capsule Technology Platform by adding news, editing the news and displaying the news that is on the air.",
   photos: [kapsulweb1],
  },
-
  //  Shift Export
  {
   path: "kapsul-overtime",

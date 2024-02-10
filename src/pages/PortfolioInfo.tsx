@@ -1,10 +1,22 @@
 import { useLocation } from "react-router-dom";
 import { data } from "../models/portfolio";
 import { Carousel, ConfigProvider } from "antd";
+import { useEffect } from "react";
 
 export const PortfolioInfo = () => {
  const location = useLocation();
  const product = location.state;
+
+ const scrollToTop = () => {
+  window.scrollTo({
+   top: 0,
+   behavior: "smooth",
+  });
+ };
+
+ useEffect(() => {
+  scrollToTop();
+ }, []);
 
  console.log(product);
  return (
