@@ -39,7 +39,7 @@ export const Footer = () => {
       href="tel:+90 546 434 60 08"
      >
       <img src={phone} className={" w-[20px] "} />
-      546 434 60 08
+      +90 546 434 60 08
      </a>
      <a
       className="flex items-center gap-2 cursor-pointer text-[15px] font-bold text-white"

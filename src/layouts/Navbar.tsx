@@ -54,7 +54,7 @@ export const Navbar = () => {
          href="tel:+90 546 434 60 08"
         >
          <img src={phone} className={" w-[15px] "} />
-         546 434 60 08
+         +90 546 434 60 08
         </a>
         <a
          className="flex items-center gap-2 cursor-pointer text-[10px] font-bold text-white"
