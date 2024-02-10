@@ -2,9 +2,11 @@ import { useLocation } from "react-router-dom";
 import { data } from "../models/portfolio";
 import { Carousel, ConfigProvider } from "antd";
 import { useEffect, useState } from "react";
+import { useStore } from "../zustandStore";
 
 export const PortfolioInfo = ({ path }: { path: string }) => {
  //  const location = useLocation();
+ const { setIsShow } = useStore();
  //  const product = location.state;
  const [Project, setProject] = useState<any>({
   path: "",
@@ -33,6 +35,7 @@ export const PortfolioInfo = ({ path }: { path: string }) => {
 
  useEffect(() => {
   scrollToTop();
+  setIsShow("portfolio");
  }, []);
 
  return (
