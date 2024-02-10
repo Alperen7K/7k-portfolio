@@ -10,20 +10,20 @@ export default function PortfolioCard({ product }: any) {
   >
    {/* Ana Bölüm */}
    <div className={` relative`}>
-    <div className="w-[90vw] h-[50.5vw]  sm:w-[60vw] sm:h-[33.75vw] md:w-[50vh] md:h-[28.125vh]">
-     <img
-      className="w-full  rounded-t-[25px] border-solid border-white border-b-4"
-      alt={product.name}
-      src={product.photos[0]}
-     />
-    </div>
-    <h1 className="w-full text-center py-2 text-[18px] font-normal">
-     {product.name}
-    </h1>
     <img
      className=" absolute top-3 right-3 bg-gri/70 p-1 rounded-xl border-2 border-white border-solid  z-40"
      src={inspect}
     />
+    <div className="w-[90vw] h-[50.5vw]  sm:w-[60vw] sm:h-[33.75vw] md:w-[50vh] md:h-[28.125vh] overflow-y-hidden rounded-b-[20px]">
+     <img
+      className="w-full  rounded-t-[20px] border-solid border-white border-b-4"
+      alt={product.name}
+      src={product.photos[0]}
+     />
+    </div>
+    <h1 className="w-full absolute bottom-0 z-40 bg-gri rounded-b-[20px] text-center py-1 text-[18px] font-normal">
+     {product.name}
+    </h1>
    </div>
   </div>
  );

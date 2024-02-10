@@ -33,6 +33,7 @@ export const PortfolioInfo = () => {
           className=" md:border-2 border-solid border-white md:rounded-xl  "
           alt={product.name + index}
          />
+         <div className="w-full h-[30px]" />
         </div>
        );
       })}

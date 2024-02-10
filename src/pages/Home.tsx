@@ -6,7 +6,7 @@ export const Home = () => {
  const { setIsShow } = useStore();
 
  useEffect(() => {
-  setIsShow("about");
+  setIsShow("");
  }, []);
  return (
   <div className="m-0 p-0 w-[100vw] h-[100%] text-white">

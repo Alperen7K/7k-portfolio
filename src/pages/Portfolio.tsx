@@ -19,15 +19,6 @@ export const Portfolio = () => {
     {data.map((product: any) => {
      return <PortfolioCard product={product} />;
     })}
-    {data.map((product: any) => {
-     return <PortfolioCard product={product} />;
-    })}
-    {data.map((product: any) => {
-     return <PortfolioCard product={product} />;
-    })}
-    {data.map((product: any) => {
-     return <PortfolioCard product={product} />;
-    })}
    </div>
   </div>
  );
