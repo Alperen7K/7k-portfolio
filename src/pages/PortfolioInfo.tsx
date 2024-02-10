@@ -27,7 +27,6 @@ export const PortfolioInfo = ({ path }: { path: string }) => {
  useEffect(() => {
   const FindProject = () => {
    let proj = data.filter((e: any) => e.path === path);
-   console.log(proj);
    setProject(proj[0]);
   };
   FindProject();
