@@ -9,7 +9,7 @@ export const PortfolioInfo = () => {
  console.log(product);
  return (
   <div className="w-[100vw] overflow-x-hidden flex flex-col items-center">
-   <h1 className="w-full font-bold text-center text-[30px] xl:text-[40px] my-5 mt-10">
+   <h1 className="w-full font-bold text-center text-[30px] xl:text-[40px] mb-5 ">
     {product.name}
    </h1>
    <div className="w-full ">
@@ -24,7 +24,7 @@ export const PortfolioInfo = () => {
       },
      }}
     >
-     <Carousel autoplaySpeed={2000} className="" autoplay infinite>
+     <Carousel autoplaySpeed={4000} className="" autoplay infinite>
       {product.photos.map((photo: any, index: number) => {
        return (
         <div className="w-full md:px-20 lg:px-40 xl:px-60">
@@ -41,14 +41,11 @@ export const PortfolioInfo = () => {
     </ConfigProvider>
    </div>
    <div className="w-full p-5 py-10 flex flex-col items-center">
-    <h1 className="max-w-[700px]">{product.detail}</h1>
+    <h1 className="w-full md:px-20 lg:px-40 xl:px-60">{product.detail}</h1>
     <div className="py-5">
      <h1 className="text-center text-[24px] font-bold mb-2">
       Used Technologies
      </h1>
-     {/* {product.techs.map((tech: string) => {
-      return <span className=" p-1 "> - {tech} -</span>;
-     })} */}
      {product.techs.join(" / ")}
     </div>
    </div>
