@@ -11,7 +11,7 @@ export const Footer = () => {
   "w-8 shadow rounded-lg  hover:bg-antrasit duration-300 hover:scale-[1.04] ";
  const navigate = useNavigate();
  return (
-  <div className="w-full bg-gri flex items-center justify-center">
+  <div className="w-full bg-gri flex items-center justify-center border-solid border-t-2 border-white">
    <div className="w-[80vw] py-5 flex flex-col sm:flex-row sm:justify-between items-center gap-y-4 ">
     <div className="flex flex-col items-center gap-y-2 sm:gap-y-0">
      <div
