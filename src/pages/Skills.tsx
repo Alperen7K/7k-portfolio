@@ -5,8 +5,16 @@ import { LoadingBar } from "../components/loadingBar";
 export const Skills = () => {
  const { setIsShow, isShow } = useStore();
 
+ const scrollToTop = () => {
+  window.scrollTo({
+   top: 0,
+   behavior: "smooth",
+  });
+ };
+
  useEffect(() => {
   setIsShow("skills");
+  scrollToTop();
  }, []);
 
  const skills = [

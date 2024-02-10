@@ -71,12 +71,16 @@ export const PortfolioInfo = ({ path }: { path: string }) => {
     </ConfigProvider>
    </div>
    <div className="w-full p-5 py-10 flex flex-col items-center">
-    <h1 className="w-full md:px-20 lg:px-40 xl:px-60">{Project.detail}</h1>
+    <h1 className="w-full md:px-20 lg:px-40 xl:px-60 text-justify">
+     {Project.detail}
+    </h1>
     <div className="py-5">
      <h1 className="text-center text-[24px] font-bold mb-2">
       Used Technologies
      </h1>
-     {Project.techs.join(" / ")}
+     <div className="w-full flex items-center justify-center">
+      <span className="w-full text-center">{Project.techs.join(" / ")}</span>
+     </div>
     </div>
    </div>
   </div>

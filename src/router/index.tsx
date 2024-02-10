@@ -12,7 +12,6 @@ export const Router = () => {
     { path: "/about", element: <About /> },
     { path: "/skills", element: <Skills /> },
     { path: "/portfolio", element: <Portfolio /> },
-    // { path: "/portfolio/:project", element: <PortfolioInfo /> },
     {
      path: "/portfolio/kapsul-forms",
      element: <PortfolioInfo path={"kapsul-forms"} />,

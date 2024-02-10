@@ -27,7 +27,7 @@ export const Navbar = () => {
  };
 
  return (
-  <div className="sticky top-0 z-40 py-1 right-0 left-0 navbar-font backdrop-blur-sm text-white border-b-2 border-solid border-white/70 ">
+  <div className="sticky top-0 z-50 py-1 right-0 left-0 bg-gri navbar-font backdrop-blur-sm text-white border-b-2 border-solid border-white/70 ">
    {/* Side Bar */}
    <ConfigProvider
     theme={{
@@ -125,7 +125,7 @@ export const Navbar = () => {
     </Drawer>
    </ConfigProvider>
    <div className="h-[100px] w-full   flex items-center justify-center">
-    <div className="w-[100vw] sm:w-[95vw] lg:w-[85vw] h-full  rounded-b-full pb-4 px-10   flex items-center justify-between">
+    <div className="w-[100vw] sm:w-[95vw] lg:w-[85vw] h-full  rounded-b-full  px-10   flex items-center justify-between">
      <label
       onClick={() => {
        scrollToTop();

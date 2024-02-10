@@ -4,6 +4,7 @@
 import { Helmet } from "react-helmet";
 import { Outlet } from "react-router-dom";
 import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
 
 export const MainLayout = () => {
   return (
@@ -16,6 +17,7 @@ export const MainLayout = () => {
     <div className="w-full pt-10 h-[100vh-100px]">
      <Outlet />
     </div>
+    <Footer />
    </>
   );
 };

@@ -56,7 +56,7 @@ export const data: any = [
    "Antd",
    "Tailwindcss",
    "Axios",
-   "react-pdf",
+   "React-pdf",
   ],
   detail:
    "Kapsul Forms, developed for managing applications in my workplace, allows dynamic creation and editing of forms. It ensures mandatory field checks during form completion. Within the completed forms, there is a page where each response is displayed in a table according to question titles. Users can search among the responses and also sort them alphabetically. Additionally, there are predefined template questions on the form creation screen, and users can add their own questions below these templates. After using these templates, on the page displaying responses, users can view or print all the information of the respondent neatly arranged in a PDF format. Kapsul Technology Platform Website.",
@@ -193,7 +193,7 @@ export const data: any = [
  //  E-Commerce
  {
   path: "e-commerce",
-  name: "Özteknik Rekor E-Ticaret",
+  name: "Özteknik Rekor E-Commerce",
   duty: "Freelance",
   techs: ["Next.js", "Typescript", "Antd", "Tailwindcss", "GrapQL"],
   detail:
