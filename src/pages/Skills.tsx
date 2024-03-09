@@ -1,16 +1,10 @@
 import React, { useEffect } from "react";
 import { useStore } from "../zustandStore";
 import { LoadingBar } from "../components/loadingBar";
+import { scrollToTop } from "../helper";
 
 export const Skills = () => {
  const { setIsShow, isShow } = useStore();
-
- const scrollToTop = () => {
-  window.scrollTo({
-   top: 0,
-   behavior: "smooth",
-  });
- };
 
  useEffect(() => {
   setIsShow("skills");
@@ -27,7 +21,7 @@ export const Skills = () => {
   { name: "CSS", rate: 80, wait: 350 },
  ];
  return (
-  <div className="w-full flex flex-col items-center pb-10">
+  <div className="w-full flex flex-col justify-center items-center pb-10 min-h-[80vh]">
    <h1 className="w-full text-[30px] font-bold mt-0 pt-0  text-center">
     Skills
    </h1>

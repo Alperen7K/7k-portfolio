@@ -3,6 +3,7 @@ import { data } from "../models/portfolio";
 import { Carousel, ConfigProvider } from "antd";
 import { useEffect, useState } from "react";
 import { useStore } from "../zustandStore";
+import { scrollToTop } from "../helper";
 
 export const PortfolioInfo = ({ path }: { path: string }) => {
  //  const location = useLocation();
@@ -16,13 +17,6 @@ export const PortfolioInfo = ({ path }: { path: string }) => {
   detail: "",
   photos: [],
  });
-
- const scrollToTop = () => {
-  window.scrollTo({
-   top: 0,
-   behavior: "smooth",
-  });
- };
 
  useEffect(() => {
   const FindProject = () => {
