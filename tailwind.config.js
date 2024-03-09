@@ -6,8 +6,8 @@ module.exports = {
    colors: {
     black: "#000",
     white: "#fff",
-    gri: "#393D46",
-    açıkGri: "#888B8F",
+    gri: "#111827",
+    açıkGri: "#1F2937",
     yeşil: "#CBF281",
     beyaz: "#F9F9F9",
    },
