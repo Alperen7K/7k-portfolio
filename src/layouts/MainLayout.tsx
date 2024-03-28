@@ -10,6 +10,7 @@ export const MainLayout = () => {
   return (
    <>
     <Helmet>
+     <meta name="description" content="Mehmet Alperen Yedik" />
      <html className="m-0 p-0" />
      <body className="min-h-full overflow-x-hidden text-white  box-border select-none  bg-açıkGri " />
     </Helmet>
