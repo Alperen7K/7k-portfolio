@@ -130,7 +130,14 @@ export const data: any = [
   path: "kapsul-web",
   name: "Kapsul Technology Platform Website",
   duty: "Kapsul Technology Platform",
-  techs: ["React.js", "Javascript", "Antd", "Tailwindcss", "Axios"],
+  techs: [
+   "React.js",
+   "Javascript",
+   "Framer Motion",
+   "Antd",
+   "Tailwindcss",
+   "Axios",
+  ],
   detail:
    "An interface used to display the news published in the press for the Capsule Technology Platform by adding news, editing the news and displaying the news that is on the air.",
   photos: [kapsulweb1],
