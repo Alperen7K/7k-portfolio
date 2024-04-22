@@ -27,7 +27,7 @@ export const Home = () => {
       <h1 className="text-center mt-16 lg:mt-0  text-[28px] font-bold">
        Mehmet Alperen YEDİK
       </h1>
-      <h1 className=" text-center text-[25px] ">Frontend Developer</h1>
+      <h1 className=" text-center text-[25px] ">Web Developer</h1>
      </div>
     </div>
    </div>
