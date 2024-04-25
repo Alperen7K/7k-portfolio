@@ -16,6 +16,7 @@ export default function PortfolioCard({ product }: any) {
     />
     <div className="w-[90vw] h-[50.5vw]  sm:w-[60vw] sm:h-[33.75vw] md:w-[50vh] md:h-[28.125vh] overflow-y-hidden rounded-b-[20px]">
      <img
+      loading="lazy"
       className="w-full  rounded-t-[20px] border-solid border-white border-b-4"
       alt={product.name}
       src={product.photos[0]}
