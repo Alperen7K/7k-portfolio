@@ -22,13 +22,13 @@ export const Footer = () => {
      </div>
      <div className="w-full justify-center flex gap-4 ">
       <a href="https://www.instagram.com/alperenyedik/" target="_blank">
-       <img className={iconClass} src={instagram} />
+       <img className={iconClass} src={instagram} alt="instagram logo" />
       </a>
       <a href="https://www.linkedin.com/in/alperen7k/" target="_blank">
-       <img className={iconClass} src={linkedin} />
+       <img className={iconClass} src={linkedin} alt="linkedin logo" />
       </a>
       <a href="https://github.com/Alperen7K" target="_blank">
-       <img className={iconClass} src={github} />
+       <img className={iconClass} src={github} alt="github logo" />
       </a>
      </div>
     </div>
@@ -38,14 +38,14 @@ export const Footer = () => {
       className="flex items-center gap-2 cursor-pointer text-[15px] font-bold text-white"
       href="tel:+90 546 434 60 08"
      >
-      <img src={phone} className={" w-[20px] "} />
+      <img src={phone} className={" w-[20px] "} alt="phone logo" />
       +90 546 434 60 08
      </a>
      <a
       className="flex items-center gap-2 cursor-pointer text-[15px] font-bold text-white"
       href="mailto:mehmetalperenyedik@gmail.com"
      >
-      <img src={mail} className={" w-[20px] "} />
+      <img src={mail} className={" w-[20px] "} alt="mail logo" />
       mehmetalperenyedik@gmail.com
      </a>
     </div>

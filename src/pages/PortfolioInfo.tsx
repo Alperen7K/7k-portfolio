@@ -56,7 +56,7 @@ export const PortfolioInfo = ({ path }: { path: string }) => {
           loading="lazy"
           src={photo}
           className=" md:border-2 border-solid border-white md:rounded-xl  "
-          alt={Project.name + index}
+          alt={Project.name}
          />
          <div className="w-full h-[30px]" />
         </div>

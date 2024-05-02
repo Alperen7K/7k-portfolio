@@ -13,6 +13,7 @@ export default function PortfolioCard({ product }: any) {
     <img
      className=" absolute top-3 right-3 bg-gri/70 p-1 rounded-xl border-2 border-white border-solid  z-40"
      src={inspect}
+     alt="incele"
     />
     <div className="w-[90vw] h-[50.5vw]  sm:w-[60vw] sm:h-[33.75vw] md:w-[50vh] md:h-[28.125vh] overflow-y-hidden rounded-b-[20px]">
      <img

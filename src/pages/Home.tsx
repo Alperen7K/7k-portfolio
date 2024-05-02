@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useStore } from "../zustandStore";
-import alpi from "../assets/alpy.png";
-import { Footer } from "../layouts";
+import alpi from "../assets/alpy.webp";
 import { scrollToTop } from "../helper";
 import { Player } from "@lottiefiles/react-lottie-player";
 import bg from "../assets/blowing.json";
