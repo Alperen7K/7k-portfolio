@@ -14,7 +14,7 @@ export const Navbar = () => {
  const { isShow } = useStore();
  const navigate = useNavigate();
  const [open, setOpen] = useState(false);
- let labelClass = `m-2   px-2 text-[16px] md:text-[22px] rounded-b-lg hover:border-b-[3px] text-white border-solid hover:border-white box-border duration-200  `;
+ let labelClass = `m-2   px-2 text-[16px] md:text-[20px] rounded-b-lg hover:border-b-[3px] text-white border-solid hover:border-white box-border duration-200  `;
  let draverLabelClass = "mx-2  text-[22px] text-white font-bold ";
  const iconClass =
   "w-10 shadow rounded-lg  hover:bg-antrasit duration-300 hover:scale-[1.04] ";
@@ -53,26 +53,26 @@ export const Navbar = () => {
          className="flex items-center gap-2 cursor-pointer text-[10px] font-bold text-white"
          href="tel:+90 546 434 60 08"
         >
-         <img src={phone} className={" w-[15px] "} />
+         <img src={phone} className={" w-[15px] "} alt="Phone logo" />
          +90 546 434 60 08
         </a>
         <a
          className="flex items-center gap-2 cursor-pointer text-[10px] font-bold text-white"
          href="mailto:mehmetalperenyedik@gmail.com"
         >
-         <img src={mail} className={" w-[15px] "} />
+         <img src={mail} className={" w-[15px] "} alt="mail logo" />
          mehmetalperenyedik@gmail.com
         </a>
        </div>
        <div className="w-full justify-center flex gap-4 my-6">
         <a href="https://www.instagram.com/alperenyedik/" target="_blank">
-         <img className={iconClass} src={instagram} />
+         <img className={iconClass} src={instagram} alt="instagram logo" />
         </a>
         <a href="https://www.linkedin.com/in/alperen7k/" target="_blank">
-         <img className={iconClass} src={linkedin} />
+         <img className={iconClass} src={linkedin} alt="linkedin logo" />
         </a>
         <a href="https://github.com/Alperen7K" target="_blank">
-         <img className={iconClass} src={github} />
+         <img className={iconClass} src={github} alt="github logo" />
         </a>
        </div>
       </div>
@@ -124,14 +124,14 @@ export const Navbar = () => {
      </div>
     </Drawer>
    </ConfigProvider>
-   <div className="h-[100px] w-full   flex items-center justify-center">
+   <div className="h-[60px] w-full   flex items-center justify-center">
     <div className="w-[100vw] sm:w-[95vw] lg:w-[85vw] h-full  rounded-b-full  px-10   flex items-center justify-between">
      <label
       onClick={() => {
        scrollToTop();
        navigate("/");
       }}
-      className="text-[45px] hover:scale-[1.03] font-bold duration-300"
+      className="text-[35px] hover:scale-[1.03] font-bold duration-300"
      >
       7K's
      </label>
@@ -179,6 +179,7 @@ export const Navbar = () => {
        setOpen(true);
        console.log(open);
       }}
+      alt="menu icon"
       className="w-9 sm:hidden"
       src={menu}
      />
