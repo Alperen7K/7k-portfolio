@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import { useStore } from "../zustandStore";
-import { LoadingBar } from "../components/loadingBar";
+import { useEffect } from "react";
 import { scrollToTop } from "../helper";
 import { PageTitle } from "../components";
+import { useStore } from "../zustandStore";
+import { LoadingBar } from "../components/loadingBar";
 
 export const Skills = () => {
  const { setIsShow, isShow } = useStore();

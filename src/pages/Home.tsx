@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import { useStore } from "../zustandStore";
 import alpi from "../assets/alpy.webp";
 import { scrollToTop } from "../helper";
-import { Player } from "@lottiefiles/react-lottie-player";
 import bg from "../assets/blowing.json";
 import { PageTitle } from "../components";
+import { useStore } from "../zustandStore";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 export const Home = () => {
  const { setIsShow } = useStore();

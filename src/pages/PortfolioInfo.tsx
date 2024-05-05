@@ -1,14 +1,11 @@
-import { useLocation } from "react-router-dom";
-import { data } from "../models/portfolio";
-import { Carousel, ConfigProvider } from "antd";
-import { useEffect, useState } from "react";
-import { useStore } from "../zustandStore";
 import { scrollToTop } from "../helper";
+import { useStore } from "../zustandStore";
+import { data } from "../models/portfolio";
+import { useEffect, useState } from "react";
+import { Carousel, ConfigProvider } from "antd";
 
 export const PortfolioInfo = ({ path }: { path: string }) => {
- //  const location = useLocation();
  const { setIsShow } = useStore();
- //  const product = location.state;
  const [Project, setProject] = useState<any>({
   path: "",
   name: "",

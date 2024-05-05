@@ -1,9 +1,9 @@
+import { scrollToTop } from "../helper";
 import React, { useEffect } from "react";
+import { PageTitle } from "../components";
+import { useStore } from "../zustandStore";
 import { data } from "../models/portfolio";
 import PortfolioCard from "../components/PortfolioCard";
-import { useStore } from "../zustandStore";
-import { scrollToTop } from "../helper";
-import { PageTitle } from "../components";
 
 export const Portfolio = () => {
  const { setIsShow } = useStore();
