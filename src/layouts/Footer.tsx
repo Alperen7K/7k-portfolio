@@ -1,10 +1,10 @@
 import React from "react";
+import mail from "../assets/mail.svg";
+import phone from "../assets/phone.svg";
+import close from "../assets/close.svg";
 import instagram from "../assets/instagram.svg";
 import linkedin from "../assets/linkedin.svg";
 import github from "../assets/github.svg";
-import phone from "../assets/phone.svg";
-import mail from "../assets/mail.svg";
-import close from "../assets/close.svg";
 import { useNavigate } from "react-router-dom";
 export const Footer = () => {
  const iconClass =
